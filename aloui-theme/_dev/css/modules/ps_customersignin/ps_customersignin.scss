@@ -1,0 +1,19 @@
+.user-info {
+  margin-left: 2.5rem;
+  margin-top: 0;
+  text-align: right;
+  white-space: nowrap;
+
+  a {
+    margin-left: 1em;
+
+    &:first-child {
+      border-right: 1px solid $border-left-vertical;
+      padding-right: 1em;
+    }
+  }
+
+  .account {
+    margin-left: $small-space;
+  }
+}

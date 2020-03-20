@@ -1,0 +1,13 @@
+#_desktop_currency_selector {
+  .header-nav & {
+    display: inline-block;
+    color: #ee3333;
+    border-left: 1px solid $border-left-vertical;
+
+    .currency-selector {
+      margin-top: 0;
+      margin-left: 0.9375rem;
+      white-space: nowrap;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+aloui-theme/_dev/node_modules
+classic
+_libraries
+package-lock.json
+javascript.tpl
+index.php
+debug.tpl
+core.js
+.htaccess
