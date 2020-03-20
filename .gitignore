@@ -1,3 +1,4 @@
+# Remove the node_modules & default files
 aloui-theme/_dev/node_modules
 classic
 _libraries
@@ -7,3 +8,4 @@ index.php
 debug.tpl
 core.js
 .htaccess
+
