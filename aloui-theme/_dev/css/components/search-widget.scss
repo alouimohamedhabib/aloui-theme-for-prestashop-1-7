@@ -2,6 +2,7 @@
   display: inline-block;
   @include search-box;
 }
+
 .header-top {
   .search-widget {
     form {
@@ -9,9 +10,26 @@
         min-width: inherit;
         width: 100%;
       }
+      button[type="submit"] {
+        background: $gray-darker;
+        color:$btn-primary-color;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+        &:hover {
+          background: $brand-primary;
+          color: $btn-primary-color ;
+          cursor: pointer;
+          i {
+            color: $btn-primary-color ;
+          }
+        }
+      }
     }
   }
 }
+
 #checkout {
   #search_widget {
     display: none; /* Not ideal solution by allows to reuse same hooks/templates */
@@ -39,8 +57,10 @@
   .header-top {
     .search-widget {
       float: none;
+
       form {
         margin: 0 auto;
+
         input[type="text"] {
           min-width: inherit;
           background: white;
@@ -49,8 +69,19 @@
     }
   }
 }
+
 @include media-breakpoint-up(md) {
   .search-widget {
     min-width: 15.63rem;
+  }
+}
+
+// for desktop
+@include media-breakpoint-up(md) {
+  #CartSearchWrapper {
+    #search_widget {
+      margin-right: 2em;
+
+    }
   }
 }

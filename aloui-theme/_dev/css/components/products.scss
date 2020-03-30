@@ -542,21 +542,30 @@
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  z-index: 2;
+  justify-content: space-between;
   z-index: 2;
 
   li.product-flag {
     pointer-events: auto;
     width: fit-content;
-    background: $brand-primary;
-    font-weight: 700;
-    padding: 0.3125rem 0.4375rem;
+    padding:0px  10px;
     text-transform: uppercase;
-    color: white;
     margin-top: $small-space;
     font-size: $base-font-size;
-
-    @include box-shadow-light;
+    &.discount {
+      color: $gray-darker;
+      border: 1px solid $gray-darker;
+      margin-right: 10px;
+    }
+    &.new {
+      color: $brand-primary;
+      border: 1px solid$brand-primary;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    //@include box-shadow-light;
     &.online-only {
       position: absolute;
       top: 25rem;
@@ -573,9 +582,7 @@
     }
     &.discount-percentage,
     &.discount-amount,
-    &.discount {
-      background-color: $brand-secondary;
-    }
+
     &.on-sale {
       order: -1;
       background: $brand-secondary;

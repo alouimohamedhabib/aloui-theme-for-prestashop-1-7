@@ -22,6 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+
 <div id="js-product-list-header">
     {if $listing.pagination.items_shown_from == 1}
         <div class="block-category card card-block">

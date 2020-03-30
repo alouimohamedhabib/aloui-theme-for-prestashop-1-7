@@ -54,9 +54,11 @@
 
     <section id="wrapper">
         {hook h="displayWrapperTop"}
-        <div id="sliderTop">
-            {widget name="ps_imageslider"}
-        </div>
+        {if  $page.page_name == 'index'}
+            <div id="sliderTop">
+                {widget name="ps_imageslider" }
+            </div>
+        {/if}
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
